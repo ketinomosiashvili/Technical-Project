@@ -236,7 +236,7 @@ function openForm() {
 }
 function closeForm() {
     document.getElementById("service-overlay").style.display = "none";
-  }
+}
 
 
 function validation (event) {
@@ -338,7 +338,7 @@ function validation (event) {
 // service
 
 function setServiceDiv(event) {
-
+    innerHTML = " ";
     let serviceWraperDiv = document.getElementById('service-Wraper-div');
 
     let serviceContainer = document.createElement('div');
@@ -385,8 +385,8 @@ function setServiceDiv(event) {
     serviceText.appendChild(serviceAge);
     serviceText.appendChild(serviceEmail);
 
-    console.log(serviceContainer);
-    closeForm(event);
+    // console.log(serviceContainer);
+    // closeForm();
 
 }
 
