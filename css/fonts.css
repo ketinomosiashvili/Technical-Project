@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../fonts/Tangerine-Bold.eot');
+    src: url('../fonts/Tangerine-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tangerine-Bold.woff2') format('woff2'),
+        url('../fonts/Tangerine-Bold.woff') format('woff'),
+        url('../fonts/Tangerine-Bold.svg#Tangerine-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff'),
+        url('../fonts/Poppins-Medium.ttf') format('truetype'),
+        url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

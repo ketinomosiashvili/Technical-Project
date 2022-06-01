@@ -1,0 +1,147 @@
+@media  (max-width: 1008px){
+    /* header */
+    .toggle-button {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar-wraper {
+        flex-direction: column;
+    }
+    .nav-ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar.activeNavigation {
+        display: block;
+    }
+    .toggle-button.activeBurger .top-line{
+        transform: rotate(45deg);
+        top: 20px;
+    }
+    .toggle-button.activeBurger .middle-line{
+        display: none;
+    }
+    .toggle-button.activeBurger .bottom-line{
+        transform: rotate(-45deg);
+        top: 20px;
+    }
+    .navbar-relative.activeHeader{
+        margin-bottom: 20px;
+    }
+    /* slider */
+    
+    .slider-wraper {
+        margin: 50px auto;
+    }
+    .slider-title {
+        font-size: 40px;
+    }
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+@media (max-width: 750px){
+
+    .footer-block-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-p {
+        font-size: 10px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    body{
+        padding-bottom: 0;
+    }
+    /* services */
+    .service-overlay{
+        padding: 15px;
+    }
+
+}
+@media  (max-width: 640px){
+    /* header */
+    .navbar-relative.activeHeader{
+        margin-bottom: 10px;
+    }
+    .fa-accusoft {
+        font-size: 40px;
+    }
+    .nav-a{
+        font-size: 20px;
+    }
+    .burger-line {
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        background-color: rgb(88,99,240);
+        transition: all 0.5s linear;
+        border-radius: 2px;
+    }
+    /* slider */
+    .slider-title { 
+        font-size: 25px;
+        width: 170px;
+    }
+    .background-img{
+        height: 250px;
+   }
+   .arrow {
+    width: 40px;
+    height: 40px;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+    /* posts */
+    .post-title{
+        font-size: 23px;
+    }
+    .overlay {
+        left: 5px;
+        bottom: 190px;
+    }
+    .post-descr{
+       font-size: 10px;
+    }
+    /* services */
+    .block-container, .service-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block, .service-text{
+        margin-bottom: 15px;
+    }
+    .service-container{
+      max-width: 300px;
+      width: 100%;
+    }
+    .service-overlay{
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    footer{
+        padding: 10px;
+    }
+    .create-service{
+        font-size: 20px;
+    }
+    .close-icon {
+        top: 1.5%;
+        right: 5%;
+    }
+
+}
+@media (max-width: 360px) {
+      /* posts */
+    .overlay{
+        top: 30%;
+    }  
+}
