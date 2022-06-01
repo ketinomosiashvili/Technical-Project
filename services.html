@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/home-page.png">
+    <title>Tech-Project</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-relative">
+            <div class="navbar-wraper">
+                <a href="index.html"><i class="fa-brands fa-accusoft"></i></a>
+                <nav class="navbar" id="navbarlinks">
+                    <ul class="nav-ul">
+                        <li class="nav-li "><a class="nav-a" href="index.html">Main</a></li>
+                        <li class="nav-li"><a class="nav-a active" href="services.html">Services</a></li>
+                    </ul>
+                </nav> 
+                <div class="toggle-button" id="toggleBurger">
+                    <div class="burger-line top-line"></div>
+                    <div class="burger-line middle-line"></div>
+                    <div class="burger-line bottom-line"></div>
+                </div>
+            </div>
+            
+        </div>
+
+    </header>
+    <div class="add-service-div">
+        <button class="new-service-button" onclick="openForm()" id="new-service-button">Add new service</button>
+    </div>
+    <div class="service-overlay" id="service-overlay">
+        <h2 class="create-service">Create new service</h2>
+        <div class="close-icon" id="close-icon"><i class="fa-solid fa-xmark" onclick="closeForm()"></i></div>
+        <div class="horizontal-line"></div>
+        <form action="#" id="registration" onsubmit="validation(event)">
+           <div class="input-div">
+                <label class="form-text" name="title"  for="title">Title<span class="required_">*</span></label> 
+                <input type="text" id="title" placeholder="Post title">     
+                <span class="error-text" id="error_title"></span>
+            </div> 
+            <div class="input-div"> 
+                <label  class="form-text"  for="Description">Description<span class="required_">*</span></label>
+                <textarea name="Post-description" id="Description"></textarea>
+                <span class="error-text" id="error_description"></span>
+            </div>
+            <div class="input-div">
+                <label  class="form-text"  for="title">Image<span class="required_">*</span></label> 
+                <input type="file" id="myfile" name="myfile" accept="image/x-png, image/jpg" required>  
+               
+            </div>
+            <h3 class="form-text">Select your age:<span class="required_">*</span></h3>
+            <div class="input-div" id="input-age">
+                <input type="radio" name="age" id="age1" value="18 - 35">
+                <label for="age1">18 - 35</label>
+                <input type="radio" name="age" id="age2" value="35 - 50">
+                <label for="age2">35 - 50</label>
+                <input type="radio" name="age" id="age3" value="50+">
+                <label for="age2">50+</label>
+                <span class="error-text" id="error_age"></span>
+            </div>
+            <div class="input-div"> 
+                <label class="form-text" for="email">Email<span class="required_">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                <span class="error-text" id="error_email"></span>
+            </div>
+            <div class="input-div">
+                <input class="input-div" type="checkbox" name="agree" id="checkagree">
+                <label for="checkagree"> I agree terms and conditions<span class="required_">*</span></label>
+                <span class="error-text" id="error_agree"></span>
+            </div>
+
+            
+            <div class="horizontal-line"></div>
+            <div class="service-buttons-div">
+                <button class="creating-service-button close-white" onclick="closeForm()">close</button>
+                <button class="creating-service-button save-blue">Save Changes</button>
+            </div> 
+        </form>
+            
+            
+
+    </div>
+    <div class="service-divWraper" id="service-Wraper-div">
+        <div class="service-container">
+            <div class="service-text">
+                <h2 class="service-text-title">Design</h2>
+                <p>Our company offers you the most fashionable, modern designs. You can see some examples on our page.</p>
+                <p class="service-age">Age: 18-35</p>
+                <p>Email: evasmith@gmail.com</p>
+            </div>
+            <div class="service-img imgN1"></div>
+        </div>
+        <div class="service-container">
+            <div class="service-text">
+                <h2 class="service-text-title">Comfort</h2>
+                <p>Our company offers you the most comfortable, siutable and exquisite houses. We can easily make you feel at home.</p>
+                <p class="service-age">Age: 35-50</p>
+                <p>Email: annjones@gmail.com</p>
+            </div>
+            <div class="service-img imgN2"></div>
+            </div>
+    </div>
+    <section class="Contact-info">
+        <h2 class="black-title">Contact information</h2>
+        <div class="block-container">
+            <div class="block">
+                <div class="circle"><a href="mailto:mail@gmail.com"><i class="icon fa-regular fa-envelope"></i></a></div>
+                <h4 class="h4-info">Email</h4>
+                <a class="a-info violet" href="mailto:mail@gmail.com">mail@gmail.com</a>
+            </div>
+            <div class="block">
+                <div class="circle"><a href="callto:+03206827890"><i class="icon fa-solid fa-phone"></i></a></div>
+                <h4 class="h4-info">Phone</h4>
+                <a  class="a-info violet" href="callto:+03206827890">+0 320 682 7890</a>
+            </div>
+            <div class="block">
+                <div class="circle"><a href="https://goo.gl/maps/t7MTJMwoZ2cYxGE2A" target="blank"><i class="loc-icon fa-solid fa-location-dot"></i></a> </div>
+                <h4 class="h4-info">Location</h4>
+                <a  class="a-info violet" href="https://goo.gl/maps/t7MTJMwoZ2cYxGE2A" target="blank"> Main Str Chicago Ilinois </a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <footer>
+        <div class="footer-block-container">
+            <div>
+                <h4 class="footer-title">Contact Info</h4>
+                <h5 class="footer-text-h5"><a class="violet" href="mailto:mail@gmail.com"> <i class="contact-icon fa-regular fa-envelope"></i><span class="contact-span"> mail@gmail.com</span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="callto:+03206827890"><i class=" contact-icon fa-solid fa-phone"></i> <span class="contact-span">+0 320 682 7890 </span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="https://goo.gl/maps/t7MTJMwoZ2cYxGE2A" target="blank"> <i class=" contact-icon fa-solid fa-location-dot"></i><span class="contact-span">Main Str Chicago Ilinois</span> </a></h5>                              
+            </div>
+            <div class="copyright-div">
+            <p class="footer-p">Copyright ©2022 All rights reserved</p>
+            <div class="media-icon-container">
+                <div class="media-icon"><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
+                </div> 
+            </div>
+            </div>
+        </div>
+
+        
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
