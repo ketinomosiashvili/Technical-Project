@@ -56,7 +56,7 @@
         margin-top: 10px;
     }
     body{
-        padding-bottom: 0;
+        padding-bottom: 350px;
     }
     /* services */
     .service-overlay{
@@ -111,11 +111,11 @@
        font-size: 10px;
     }
     /* services */
-    .block-container, .service-container{
+   .service-container{
         flex-direction: column;
         align-items: center;
     }
-    .block, .service-text{
+    .service-text{
         margin-bottom: 15px;
     }
     .service-container{
