@@ -82,67 +82,6 @@
     top: 50%;
 }
 
-/* info */
-/* .block-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-.block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    max-width: 320px;
-}
-.circle{
-    width: 59px;
-    height: 58px;
-    border-radius: 50%;
-    background-color: #5863F8;
-    position: relative;
-    display: flex;
-    
-}
-.icon, .loc-icon{
-    position: absolute;
-    color: #FFFFFF;
-    
-}
-.icon{
-    margin: 18px 18.5px;
-    font-size: 23px;
-}
-.loc-icon{
-    margin: 18px 21.5px;
-    font-size: 23px;
-}
-.h4-info{
-    color:#000000;
-    font-size: 18px;
-    line-height: 27px;
-    font-family:"Poppins";
-    font-weight: 600;
-}
-.a-info{
-    color: #B1B1B1;
-    font-size: 14px;
-    line-height: 14px;
-    font-family:"Poppins";
-    font-weight: 300;
-}
-.black-title{
-    font-size: 32px;
-    font-family: "Poppins";
-    font-weight: 900;
-    color: #000000;
-    line-height: 56px;
-    margin: 40px;
-    text-align: center;
-}
-.Contact-info{
-    width: 90%;
-    margin: 0 auto;
-} */
 /* footer */
 body{
     padding-bottom: 220px;
